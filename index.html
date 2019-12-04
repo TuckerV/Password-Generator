@@ -32,14 +32,14 @@
                  <button class="btn-lg" id="copyButton">Copy</button>
              </div>
           </div>
-        </br>
+        <br>
         <!-- Length Input here -->
           <div class="row justify-content-center">
               <div class="col-md-2">
                   <div class="form-group">
-                    <label for="inputPasswordLength">Length of your Password: </label>
+                    <label for="passLength">Length of your Password: </label>
                     <input type="text"
-                      class="form-control" name="" id="passLength" aria-describedby="helpId" placeholder="Between 8 and 128">
+                      class="form-control" name="inputLengthBox" id="passLength"  placeholder="Between 8 and 128">
                   </div>
               </div>
           </div>
@@ -49,7 +49,7 @@
                 <div class="col-md-2" style="text-align: center;" >
                     <div class="form-check">
                     <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input" name="" id="lowerCheck" value="checkedValue" unchecked>
+                        <input type="checkbox" class="form-check-input" name="lowerCaseCheckbox" id="lowerCheck" value="checkedValue" checked>
                         Lower Case
                     </label>
                     </div>
@@ -58,7 +58,7 @@
                 <div class="col-md-2" style="text-align: center;" >
                     <div class="form-check">
                     <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input" name="" id="upperCheck" value="checkedValue" unchecked>
+                        <input type="checkbox" class="form-check-input" name="upperCaseCheckbox" id="upperCheck" value="checkedValue" checked>
                         Upper Case
                     </label>
                     </div>
@@ -69,7 +69,7 @@
                 <div class="col-md-2" style="text-align: center;" >
                     <div class="form-check">
                     <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input" name="" id="numbersCheck" value="checkedValue" unchecked>
+                        <input type="checkbox" class="form-check-input" name="numbersCheckbox" id="numbersCheck" value="checkedValue" checked>
                         Numbers
                     </label>
                     </div>
@@ -78,13 +78,13 @@
                 <div class="col-md-2" style="text-align: center;" >
                     <div class="form-check">
                     <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input" name="" id="specialCheck" value="checkedValue" unchecked>
+                        <input type="checkbox" class="form-check-input" name="specialCheckbox" id="specialCheck" value="checkedValue" checked>
                         Special Characters
                     </label>
                     </div>
                 </div>
          </div>
-        </br>
+        <br>
       </div>
     <!-- Custom JavaScript -->
     <script src="script.js"></script>

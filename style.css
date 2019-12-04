@@ -1,11 +1,12 @@
 #header {
     font-family: Arial, Helvetica, sans-serif;
+    back
 }
 
 .container {
     max-width: 90%;
     padding: 0;
-    border: dotted 2px black;
+    border: solid 3px black;
     background-color: silver;
 }
 
