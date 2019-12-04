@@ -1,0 +1,17 @@
+#header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 90%;
+    padding: 0;
+    border: dotted 2px black;
+    background-color: silver;
+}
+
+#password {
+    width: 50%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Random Password Generator</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+      <div class="container">
+          <nav class="navbar navbar-expand navbar-dark bg-dark">
+              <div class="nav navbar-nav" id="header">
+                  <a class="nav-item nav-link active" style="font-size: large; font-weight: bolder;" href="#">Password Generator</a>
+                  <a class="nav-item nav-link" style="font-size:large" href="#">By Tucker Vassau</a>
+              </div>
+          </nav>
+          <h2 style="text-align: center;">Generate a password</h2>
+          <div class="row">
+              <textarea class="mx-auto" readonly id="password" placeholder="Password Generated Here" aria-label="Password:"></textarea>
+          </div>
+          <div class="row justify-content-center">
+             <div class="col-md-3" style="text-align: center; border: dotted 2px red;">
+                 <button class="btn-lg" id="generateButton">Generate Password</button>
+             </div>
+             <div class="col-md-3" style="text-align: center; border: dotted 2px red;">
+                 <button class="btn-lg" id="copyButton">Copy</button>
+             </div>
+          </div>
+        </br>
+        <!-- Length Input here -->
+          <div class="row justify-content-center">
+              <div class="col-md-2">
+                  <div class="form-group">
+                    <label for="inputPasswordLength">Length of your Password: </label>
+                    <input type="text"
+                      class="form-control" name="" id="passLength" aria-describedby="helpId" placeholder="Between 8 and 128">
+                  </div>
+              </div>
+          </div>
+
+          <!-- Check Boxes here -->
+          <div class="row justify-content-center">
+                <div class="col-md-2" style="text-align: center; border: dotted 2px black;" >
+                    <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="" id="lowerCheck" value="checkedValue" unchecked>
+                        Lower Case
+                    </label>
+                    </div>
+                </div>
+
+                <div class="col-md-2" style="text-align: center; border: dotted 2px black;" >
+                    <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="" id="upperCheck" value="checkedValue" unchecked>
+                        Upper Case
+                    </label>
+                    </div>
+                </div>
+          </div>
+
+          <div class="row justify-content-center">
+                <div class="col-md-2" style="text-align: center; border: dotted 2px black;" >
+                    <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="" id="numbersCheck" value="checkedValue" unchecked>
+                        Numbers
+                    </label>
+                    </div>
+                </div>
+
+                <div class="col-md-2" style="text-align: center; border: dotted 2px black;" >
+                    <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="" id="specialCheck" value="checkedValue" unchecked>
+                        Special Characters
+                    </label>
+                    </div>
+                </div>
+         </div>
+        </br>
+      </div>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
