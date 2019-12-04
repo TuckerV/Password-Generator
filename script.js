@@ -40,10 +40,12 @@ generatePass.addEventListener("click", function() {
 
     if(length < 8 || length > 128 || !length) {
         alert("Make sure you input a number between 8 and 128!")
+        return
     };
 
     if(!lowerChecked && !upperChecked && !numbersChecked && !specialChecked) {
         alert("You must check at least one option!")
+        return
     };
 
     passwordEl.value = passwordGen(length, choicesTotal);
