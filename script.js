@@ -52,7 +52,7 @@ generatePass.addEventListener("click", function() {
 
 })
 
-passwordGen = function (length, choicesTotal) {
+function passwordGen (length, choicesTotal) {
     var thePassword = '';
 
     for (var i = 0; i<length; i++){
@@ -61,3 +61,27 @@ passwordGen = function (length, choicesTotal) {
 
     return thePassword;
 }
+
+function copyFunction() {
+    var copyText = document.getElementById("password");
+
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+
+    document.execCommand("copy");
+
+    alert("Copied the text: " + copyText.value);
+};
+
+// copyPass.addEventListener("click", function() {
+//     const copyToClipboard = str => {
+//         const el = document.createElement('textarea');
+//         el.value = str;
+//         document.body.appendChild(el);
+//         el.select();
+//         document.execCommand('copy');
+//         console.log(el);
+//         document.body.removeChild(el);
+//       };
+// });
+
