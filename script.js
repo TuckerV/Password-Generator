@@ -60,7 +60,7 @@ function passwordGen (length, choicesTotal) {
     };
 
     return thePassword;
-}
+};
 
 function copyFunction() {
     var copyText = document.getElementById("password");
@@ -72,16 +72,3 @@ function copyFunction() {
 
     alert("Copied the text: " + copyText.value);
 };
-
-// copyPass.addEventListener("click", function() {
-//     const copyToClipboard = str => {
-//         const el = document.createElement('textarea');
-//         el.value = str;
-//         document.body.appendChild(el);
-//         el.select();
-//         document.execCommand('copy');
-//         console.log(el);
-//         document.body.removeChild(el);
-//       };
-// });
-

@@ -17,18 +17,19 @@
           <nav class="navbar navbar-expand navbar-dark bg-dark">
               <div class="nav navbar-nav" id="header">
                   <a class="nav-item nav-link active" style="font-size: large; font-weight: bolder;" href="#">Password Generator</a>
-                  <a class="nav-item nav-link" style="font-size:large" href="#">By Tucker Vassau</a>
+                  <a class="nav-item nav-link" style="font-size:large" href="#" id="tuckerVassau">By Tucker Vassau</a>
               </div>
           </nav>
           <h2 style="text-align: center;">Generate a password</h2>
           <div class="row">
               <textarea class="mx-auto" readonly id="password" placeholder="Password Generated Here" aria-label="Password:"></textarea>
           </div>
+          <br>
           <div class="row justify-content-center">
-             <div class="col-md-3" style="text-align: center;">
+             <div class="col-md-3">
                  <button class="btn-lg" id="generateButton">Generate Password</button>
              </div>
-             <div class="col-md-3" style="text-align: center;">
+             <div class="col-md-3">
                  <button class="btn-lg" id="copyButton" onclick="copyFunction()">Copy</button>
              </div>
           </div>
@@ -36,7 +37,7 @@
         <!-- Length Input here -->
           <div class="row justify-content-center">
               <div class="col-md-2">
-                  <div class="form-group">
+                  <div class="form-group" >
                     <label for="passLength">Length of your Password: </label>
                     <input type="text"
                       class="form-control" name="inputLengthBox" id="passLength"  placeholder="Between 8 and 128">
@@ -46,7 +47,7 @@
 
           <!-- Check Boxes here -->
           <div class="row justify-content-center">
-                <div class="col-md-2" style="text-align: center;" >
+                <div class="col-md-2">
                     <div class="form-check">
                     <label class="form-check-label">
                         <input type="checkbox" class="form-check-input" name="lowerCaseCheckbox" id="lowerCheck" value="checkedValue" checked>
@@ -55,7 +56,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2" style="text-align: center;" >
+                <div class="col-md-2" >
                     <div class="form-check">
                     <label class="form-check-label">
                         <input type="checkbox" class="form-check-input" name="upperCaseCheckbox" id="upperCheck" value="checkedValue" checked>
@@ -66,7 +67,7 @@
           </div>
 
           <div class="row justify-content-center">
-                <div class="col-md-2" style="text-align: center;" >
+                <div class="col-md-2">
                     <div class="form-check">
                     <label class="form-check-label">
                         <input type="checkbox" class="form-check-input" name="numbersCheckbox" id="numbersCheck" value="checkedValue" checked>
@@ -75,7 +76,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2" style="text-align: center;" >
+                <div class="col-md-2">
                     <div class="form-check">
                     <label class="form-check-label">
                         <input type="checkbox" class="form-check-input" name="specialCheckbox" id="specialCheck" value="checkedValue" checked>
