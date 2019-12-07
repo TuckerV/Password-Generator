@@ -14,7 +14,7 @@ I was motivated to build this project to create a product that would be not only
 
 ### features
 
-![alt text](http://C:\Users\tuckv\Developer\Projects\Password-Generator/websiteScreenshot.png)
+![Image description](websiteScreenshot.png)
 
 The passoword generator has a few features that allow the user to customize the criteria of the password that they wish to generate. In the large text area at the top of the page, is where the generated password will appear, once the users criteria has been input, and they have clicked the Generate Password button. 
 
